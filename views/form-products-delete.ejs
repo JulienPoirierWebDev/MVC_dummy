@@ -6,7 +6,7 @@
     <title>Créer un nouveau produit !</title>
   </head>
   <body>
-    <form action="/produits/delete" method="GET" id="form">
+    <form action="/produits/delete" method="POST" id="form">
       <select name="id" id="product">
         <option value="" disabled selected>-- Choississez un produit --</option>
         <% products.forEach((product) => { %>

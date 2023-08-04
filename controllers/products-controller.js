@@ -70,7 +70,7 @@ function formProductDelete(request, response) {
 }
 
 function deleteProduct(request, response) {
-  const id = Number(request.query.id);
+  const id = Number(request.body.id);
   console.log("id", id);
 
   const products = productsModel.deleteOne(id);
