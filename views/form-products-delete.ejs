@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Créer un nouveau produit !</title>
+  </head>
+  <body>
+    <form action="/produits/delete" method="GET" id="form">
+      <select name="id" id="product">
+        <option value="" disabled selected>-- Choississez un produit --</option>
+        <% products.forEach((product) => { %>
+
+        <option value="<%=product.id%>"><%=product.name %></option>
+
+        <% }) %>
+      </select>
+
+      <div>
+        <input type="submit" title="Créer un produit" />
+      </div>
+    </form>
+  </body>
+</html>
